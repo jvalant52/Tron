@@ -1,0 +1,268 @@
+.profile-block {
+  display: inline-flex;
+  width: 100%;
+
+  .left-block {
+    margin-top: 1%;
+    margin-right: 1%;
+    background: #ffffff;
+    padding: 2%;
+    min-width: 25%;
+    box-shadow: rgba(0, 0, 0, 0.3) 5px 8px 12px;
+    border-radius: 10px;
+  }
+
+  .stats-title-h3 {
+    padding: 1% 0;
+
+    h3 {
+      padding: 0;
+      margin: 2%;
+      font-size: 1rem;
+      font-weight: 700;
+      color: #005dee;
+    }
+  }
+
+  .right-block {
+    // margin-left: 2%;
+    margin-top: 1%;
+
+    // margin-left: 2.5%;
+    background: #ffffff;
+    padding: 2%;
+    min-width: 66%;
+    box-shadow: rgba(0, 0, 0, 0.3) 5px 8px 12px;
+    border-radius: 10px;
+  }
+}
+
+.stats {
+  // display: inline-flex;
+  // flex: 0 5 auto;
+  // flex-wrap: wrap;
+  // justify-content: space-between;
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  border: 1px solid #f6ae2d;
+  // margin: 0.5%;
+  // padding: 10px;
+
+  .stats-inner-block {
+    // padding: 0 0.5rem;
+    // margin: 1%;
+    // // padding: 10px;
+    // // width: 5em;
+    // // height: 3em;
+    // font-size: 1rem;
+    // align-items: center;
+    // color: #383b30;
+    padding: 0%;
+    margin: 1%;
+    font-size: 1rem;
+    color: #383b30;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .card {
+      border: 1px solid #f6ae2d;
+    }
+
+    .stats-title {
+      font-size: 0.8rem;
+      // line-height: 100%;
+      font-weight: 600;
+      color: #ee4266;
+    }
+  }
+}
+
+.card-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 2% 0;
+
+  .title {
+    width: auto;
+  }
+
+  .filter-btns-all {
+    display: inline-flex;
+    justify-content: flex-end;
+    border: 1px solid #838c95;
+    border-radius: 5px;
+    margin-right: 5px;
+    float: inline-end;
+
+    button {
+      color: #6a737c;
+      border: 0;
+      margin: 0;
+      border-radius: 0;
+      background: none;
+      font-size: 12px;
+      cursor: pointer;
+      border-right: 1px solid #838c95;
+    }
+
+    button:last-of-type {
+      border-right: none;
+    }
+
+    button:hover {
+      border-radius: 0%;
+    }
+
+    button:first-of-type:hover {
+      border-radius: 5px 0px 0px 5px;
+    }
+
+    button:last-of-type:hover {
+      border-radius: 0px 5px 5px 0px;
+    }
+  }
+
+  .filter-btns {
+    display: inline-flex;
+    justify-content: flex-end;
+    border: 1px solid #838c95;
+    border-radius: 5px;
+
+    button {
+      color: #6a737c;
+      border: 0;
+      margin: 0;
+      border-radius: 0;
+      background: none;
+      font-size: 12px;
+      cursor: pointer;
+      outline: none;
+    }
+
+    button:nth-of-type(1) {
+      border-right: 1px solid #838c95;
+    }
+
+    button:hover {
+      border-radius: 0%;
+    }
+
+    button:first-of-type:hover {
+      border-radius: 5px 0px 0px 5px;
+    }
+
+    button:last-of-type:hover {
+      border-radius: 0px 5px 5px 0px;
+    }
+  }
+
+  h3 {
+    padding: 0;
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #005dee;
+    // float: inline-start;
+  }
+}
+
+.card {
+  margin: 10px;
+  // padding-top: 0.5rem;
+  // padding: 0.5rem 0%;
+}
+
+.card-inner-div {
+  padding: 0.2rem 0%;
+}
+
+.card-inner-content {
+  padding: 0% 1rem;
+}
+
+.logged-in-scroll-card {
+  max-height: 10rem;
+  overflow: auto;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  padding: 0.2rem 0%;
+}
+
+.div-creator {
+  border-bottom: 1px solid #f2f2f2;
+  padding: 0.5rem 0%;
+}
+
+.div-creator:last-of-type {
+  border-bottom: none;
+}
+
+.inside-div-creator {
+  display: flex;
+  padding: 0% 0.6rem;
+}
+
+.tag-name {
+  // border: 1px solid black;
+  background: #f2f2f2;
+  color: #383b30;
+  padding: 0.3rem 1rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 3px;
+  min-width: 6rem;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.tag-score {
+  margin-left: auto;
+  display: flex;
+  flex-wrap: nowrap;
+  color: #383b30;
+  font-size: 0.8rem;
+  font-weight: 400;
+
+  .tag-score-digit {
+    padding: 0% 0.5rem;
+    color: #005dee;
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+}
+
+///Scrollbar css all over the site
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+@media only screen and (max-width: 767px) {
+  .profile-block {
+    display: flex;
+    flex-direction: column;
+  }
+}

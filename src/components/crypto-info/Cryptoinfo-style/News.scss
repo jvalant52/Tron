@@ -1,0 +1,56 @@
+.crypto-news {
+  min-width: 35%;
+  height: fit-content;
+  // overflow: scroll;
+  // position: sticky;
+  top: 9rem;
+  margin-left: 20px;
+}
+
+.rightcolumn {
+  margin-top: 30px;
+  height: 75vh;
+  justify-content: center;
+  overflow: hidden;
+
+  // margin-right:40px;
+}
+
+// .news-img-main {
+//   width: 100%;
+// }
+
+.news-img {
+  height: 80%;
+  width: 100%;
+  border-radius: 10px;
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  align-content: center;
+}
+
+.apidata {
+  background-color: white;
+  padding: 10px;
+  color: blue;
+  margin: 10px;
+  box-shadow: rgba(0, 0, 0, 0.3) 5px 8px 12px;
+  margin: 10px;
+  border-radius: 10px;
+}
+p:hover {
+  color: black;
+}
+a:hover {
+  color: black;
+}
+
+@media only screen and (max-width: 767px) {
+  .rightcolumn {
+    width: 100%;
+  }
+  .crypto-news {
+    margin-left: 0px;
+  }
+}

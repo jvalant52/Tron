@@ -1,0 +1,35 @@
+.bytoken-main {
+  height: 100%;
+  // margin-bottom: 10%;
+  background-color: black;
+}
+
+.token-main {
+  // margin-top: 5%;
+  margin-left: 48%;
+  padding-left: 22px;
+  padding-top: 15%;
+  color: #ffffff;
+  font-size: 17pt;
+}
+.token-text {
+  margin-left: 48%;
+  padding-top: 15px;
+}
+.token-submit {
+  margin-left: 48%;
+  padding-top: 15px;
+  padding-left: 55px;
+}
+.token-submit > input {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  background-color: #005edd;
+  color: #ffffff;
+}
+.token-submit > input:hover {
+  background-color: #f6ae2d;
+  color: black;
+}

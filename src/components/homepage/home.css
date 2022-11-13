@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Open+Sans:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap");
+.wallpaper-landing-page {
+  background-image: url("./louise-viallesoubranne-5EhN4wbfvBc-unsplash.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.795);
+}
+.content {
+  height: 100vh;
+  /* background-color: rgba(6, 9, 23, 0.893); */
+  color: #fff;
+  font-size: 3rem;
+}
+.hero-image-illustration {
+  width: 100%;
+  height: calc(100vh - 54.5px);
+}
+.hero-text {
+  background-color: rgba(0, 0, 0, 0.828);
+  position: absolute;
+  top: 54.5px;
+  width: 100%;
+  height: calc(100vh - 54.5px);
+  z-index: 10;
+  font-size: 2rem;
+  color: #fff;
+}
+.project-name {
+  font-size: 2rem;
+}
+.background {
+  background-color: black;
+  /* z-index: 1 !important; */
+  /* position: relative; */
+  overflow-x: hidden;
+  display: flex;
+}
+#tsparticles {
+  background-color: black;
+  width: 80% !important;
+}
+.part {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+/* .canvas
+{
+    background-color: black !important;
+
+} */
+canvas {
+  /* width: 150% !important; */
+  min-width: 100%;
+}
+.scene-container {
+  z-index: -1;
+  width: 100% !important;
+  max-width: 1440px !important;
+  height: 200% !important;
+  margin: 0 auto;
+}
+.globe-div {
+  display: flex;
+}
+.home2-logo {
+  height: 20vh;
+  width: 25vw;
+  margin-top: 40vh;
+}
+.z-Index {
+  position: relative;
+  z-index: 1 !important;
+}
+.landing {
+  height: 100vh;
+}
+.text-home {
+  background-color: transparent;
+  color: #fff;
+  width: 100%;
+  text-align: center;
+}
+.tag-line {
+  margin-top: 40px;
+  font-family: "Libre Baskerville", serif;
+  font-size: 1.5rem;
+  text-align: center;
+  letter-spacing: 0.4rem;
+}
+.user-guide {
+  background-color: transparent;
+  height: 100vh;
+}
+.user-guide-title {
+  padding-top: 100px;
+  padding-bottom: 20px;
+  font-size: 3rem !important;
+}
+.user-guide-body {
+  width: 80%;
+  text-align: center;
+  font-size: 1.1rem;
+  margin: 0 auto;
+}
+.logo {
+  width: 900px;
+  height: 342px;
+  margin-top: 90px;
+}
+.arrow {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.steps {
+  background-color: #faebd7;
+  border-radius: 10px;
+  padding: 10px;
+  color: rgb(13, 11, 49);
+  text-align: center;
+  margin: 0 auto;
+  /* transition: transform .3s; */
+  transition: all 1s ease;
+}
+.steps:hover {
+  transform: scale(1.2);
+  transition: all 1s ease;
+}
+.down-arrow-svg {
+  width: 100px;
+}
+.about-us {
+  margin-top: 150px;
+}
+.about-us-title {
+  padding-bottom: 20px;
+  font-size: 3rem !important;
+}
+.about-us-content {
+  margin-top: 140px;
+  padding: 20px;
+  width: 79%;
+  margin: 0 auto;
+  background-color: #faebd7;
+  color: black;
+  border-radius: 20px;
+}
+.about-project-body {
+  width: 100%;
+  text-align: justify;
+  font-size: 1.3rem;
+  line-height: 30px;
+  margin: 0 auto;
+}
+
+.FAQs {
+  padding-bottom: 50px;
+}
+
+.FAQs-title {
+  padding-top: 140px;
+  padding-bottom: 20px;
+  font-size: 3rem !important;
+}
+.faq-body- {
+  background: transparent;
+  width: 82%;
+  margin: 0 auto;
+}
+.faq-title {
+  display: none !important;
+}
+.faq-body {
+  background-color: #faebd7 !important;
+  padding: 20px;
+  border-radius: 10px;
+}
+.faq-row {
+  color: #fff !important;
+}
+.row-content-text {
+  text-align: left;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .background {
+    display: flex;
+  }
+  .user-guide-title {
+    padding-top: 600px;
+    font-size: 3rem !important;
+  }
+  .about-us-content {
+    margin-top: 130vh !important;
+  }
+  /* .scene-container {
+    height: 50% !important;
+    width: 95% !i;
+} */
+}
+
+@media (max-width: 767px) {
+  .background {
+    display: flex;
+  }
+  .user-guide-title {
+    padding-top: 600px;
+    font-size: 3rem !important;
+  }
+  .about-us-content {
+    margin-top: 130vh !important;
+  }
+  .scene-container {
+    height: 30% !important;
+    width: 95% !important;
+    margin-left: 5%;
+  }
+  .home2-logo {
+    height: 20vh;
+    width: 60vw;
+    margin-top: 40vh;
+  }
+}

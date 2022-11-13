@@ -1,0 +1,110 @@
+.crypto-header {
+  overflow: hidden;
+  white-space: nowrap;
+  white-space: nowrap;
+  position: sticky;
+  top: 0px;
+  overflow: hidden;
+  z-index: 5;
+  max-height: 10rem;
+  // background-color: black;
+}
+.coin-header {
+  // display: flex;
+  // align-items: center;
+  // align-content: center;
+  // border: 1px solid black;
+  font-size: 10px;
+  z-index: 0;
+  // height: 50px;
+  // padding-left: 5px;
+  // padding-bottom: 10px;
+  // padding-top: 10px;
+  // padding-bottom: 10px;
+  background-color: #005edd;
+  margin-top: 80px;
+}
+.price-marquee {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  -webkit-animation: loop 30s infinite linear;
+  animation: loop 30s infinite linear;
+  // animation-iteration-count: infinite;
+}
+.coin-h3-style {
+  font-size: 1rem;
+}
+img.imgs {
+  height: 40px;
+  width: 40px;
+  padding-top: 2px;
+}
+
+.name {
+  font-size: 1.5rem;
+  color: white;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.price {
+  font-size: 10px;
+  color: red;
+  padding-top: 2px;
+  // padding-left: 10px;
+}
+.symbol {
+  font-size: 1rem;
+  color: green;
+  font-weight: 600;
+  // font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.coin {
+  display: flex;
+  gap: 5px;
+  margin: 10px !important;
+  align-items: center;
+  align-content: center;
+  float: right;
+  line-height: 20px;
+  white-space: inherit;
+  inline-size: min-content;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+@keyframes loop {
+  0% {
+    -webkit-transform: translatex(100%);
+    transform: translateX(100%);
+  }
+  100% {
+    -webkit-transform: translatex(-200%);
+    transform: translateX(-200%);
+  }
+}
+.crypto-main-container {
+  display: flex;
+  // flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.crypto-main-container-inner-block {
+  display: flex;
+  // flex-direction: row;
+  // flex-wrap: nowrap;
+  justify-content: center;
+  max-width: 80%;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .crypto-main-container-inner-block {
+    max-width: 95%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .crypto-main-container-inner-block {
+    display: grid;
+  }
+}

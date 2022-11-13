@@ -1,0 +1,115 @@
+.DisplayQuestions {
+  border-top: 1px solid #eee;
+  padding: 10px;
+  display: flex;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.3) 5px 8px 12px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  width: 95%;
+
+  p {
+    font-size: 13pt;
+  }
+}
+
+.DisplayQuestions-left {
+  display: flex;
+  flex-direction: column;
+}
+.DisplayQuestions-left > .DisplayQuestions-votes {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.DisplayQuestions-votes > p {
+  text-align: center;
+  color: black;
+}
+.DisplayQuestions-answer {
+  display: flex;
+  flex-direction: column;
+}
+.DisplayQuestions-answer > p {
+  text-align: center;
+  color: black;
+}
+
+.DisplayQuestions-right {
+  margin-left: 15px;
+  display: flex;
+}
+.DisplayQuestions-right > h2 {
+  color: #0095ff;
+  margin-bottom: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.DisplayQuestions-right > p {
+  color: black;
+  text-align: justify;
+  margin-bottom: 10px;
+}
+.DisplayQuestions-askby {
+  // display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.avatar {
+  display: flex;
+  align-items: center;
+}
+
+.DisplayQuestions-askby > p > img {
+  border-radius: 50%;
+}
+.DisplayQuestions-askby > p {
+  display: flex;
+  align-items: center;
+  color: lightgray;
+}
+.DisplayQuestions-askby > small {
+  color: gray;
+}
+.counter {
+  display: flex;
+  align-items: center;
+}
+.counter > h1 {
+  justify-content: center;
+}
+.counter > button {
+  width: 4rem;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  letter-spacing: 0.05em;
+  font-size: 20px;
+
+  font-family: sans-serif;
+  text-align: center;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+.plus {
+  background-color: #005edd;
+  width: 30px !important;
+  height: 30px !important;
+  margin-right: 10px;
+}
+
+.minus {
+  background-color: #005edd;
+  width: 30px !important;
+  height: 30px !important;
+  margin-left: 10px;
+}
+
+button:hover {
+  filter: brightness(1.1);
+}
+
+.all-question-profile-img {
+  width: 40px;
+  height: 40px;
+}
